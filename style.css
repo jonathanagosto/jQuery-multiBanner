@@ -1,0 +1,65 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	height: 100%;
+}
+body {
+	background: #CCC;
+}
+#main-wrapper {
+	background: #FFF;
+	width: 980px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+.inner-wrapper {
+	padding: 15px 25px;
+}
+
+/*
+ * Image scroller CSS
+ */
+#imageScroller {
+	height: 100%;
+	position: relative;
+}
+#imageScroller .imageScroller-outer-wrapper {
+	height: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+#imageScroller .imageScroller-inner-wrapper {
+	position: relative;
+}
+#imageScroller .imageScroller-inner-wrapper img,
+#imageScroller .scrollLeft,
+#imageScroller .scrollRight {
+	opacity: 0.6;
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}
+#imageScroller .imageScroller-inner-wrapper img:hover,
+#imageScroller .scrollLeft:hover,
+#imageScroller .scrollRight:hover {
+	opacity: 1;
+}
+#imageScroller .scrollLeft,
+#imageScroller .scrollRight {
+	width: 48px;
+	height: 48px;
+	position: absolute;
+}
+#imageScroller .scrollLeft {
+	background: url('nav-left.png') no-repeat scroll 0 0;
+	top: 45%;
+	left: 15px;
+}
+#imageScroller .scrollRight {
+	background: url('nav-right.png') no-repeat scroll 0 0;
+	top: 45%;
+	right: 15px;
+}
+

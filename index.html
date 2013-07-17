@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		
+		<title>Image Scroller Demo</title>
+		<meta name="description" content="jQuery Image Scroller Demo" />
+		<meta name="author" content="Jonathan Agosto" />
+		
+		<meta name="viewport" content="width=device-width" />
+		
+		<link rel="stylesheet" href="style.css" />
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="jquery.imageScroller.js"></script>
+	</head>
+
+	<body>
+		<div id="main-wrapper">
+			<div class="inner-wrapper">
+				<header>
+					<h1>Image Scroller Demo</h1>
+				</header>
+				<article>
+					<section id="imageScroller">
+						<img src="gallery/Black_Mountain_pt1.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt2.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt3.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt4.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt5.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt6.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt7.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt8.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt9.jpg" alt="" />
+						<img src="gallery/Black_Mountain_pt10.jpg" alt="" />
+					</section>
+				</article>
+				<footer>
+					<p>
+						&copy; Copyright by Jonathan Agosto
+					</p>
+				</footer>
+			</div>
+		</div>
+		<script>
+			$(window).load(function () {
+				$('#imageScroller').imageScroller({'visibleImages':5});
+			});
+		</script>
+	</body>
+</html>
